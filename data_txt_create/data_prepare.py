@@ -19,11 +19,11 @@ for a, b, files in os.walk(ROOT_DATA):
         data_list.append(temp)
 
 
-with open('data.txt', 'w', encoding='utf-8') as file:
+with open('../data/data.txt', 'w', encoding='utf-8') as file:
     for v in data_list:
         file.write(str(v))
 
-with open('data.txt', 'r', encoding='utf-8') as file:
+with open('../data/data.txt', 'r', encoding='utf-8') as file:
     f_ = file.readlines()
     for i in range(10):
         for j in range(3):
